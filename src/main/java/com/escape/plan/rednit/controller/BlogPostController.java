@@ -20,7 +20,7 @@ public class BlogPostController {
     }
 
     @GetMapping("/search")
-    public List<BlogPost> searchByTitle(@RequestParam String title) {
+    public List<BlogPost> searchByTitle(@RequestParam String title) throws IOException {
         return service.searchByTitle(title);
     }
 }
