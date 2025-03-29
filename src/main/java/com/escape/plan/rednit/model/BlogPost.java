@@ -1,22 +1,14 @@
-package com.escape.plan.rednit.dao;
+package com.escape.plan.rednit.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.elasticsearch.annotations.Document;
+import com.escape.plan.rednit.model.base.BaseDoc;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(indexName = "blog")
-public class BlogPost {
+@Document(collection = "blog")
+public class BlogPost extends BaseDoc {
 
-    @Id
-    private String id;
     private String title;
     private String content;
     private String author;
-
-    // Constructors, Getters, and Setters
-
-    public String getId() {
-        return id;
-    }
 
     public String getTitle() {
         return title;
@@ -28,10 +20,6 @@ public class BlogPost {
 
     public String getAuthor() {
         return author;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public void setTitle(String title) {
