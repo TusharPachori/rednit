@@ -28,6 +28,11 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
 	implementation 'co.elastic.clients:elasticsearch-java:8.11.2'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	implementation 'org.redisson:redisson-spring-boot-starter:3.25.1'
+
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 

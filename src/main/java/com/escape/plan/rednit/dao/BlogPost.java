@@ -11,6 +11,7 @@ public class BlogPost {
     private String title;
     private String content;
     private String author;
+    int likes=0;
 
     // Constructors, Getters, and Setters
 
@@ -44,5 +45,13 @@ public class BlogPost {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 }
