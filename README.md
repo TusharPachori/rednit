@@ -12,6 +12,12 @@ Redis setup:
 2.  redis-server 
 
 
-
+Minio Setup
+1. Run this command docker run -p 9000:9000 -p 9001:9001 \
+   --name minio \
+   -e "MINIO_ROOT_USER=admin" \
+   -e "MINIO_ROOT_PASSWORD=admin123" \
+   -v ~/minio-data:/data \
+   quay.io/minio/minio server /data --console-address ":9001"
 
 
